@@ -13,8 +13,12 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASE_ENGINE = 'sqlite3'
-DATABASE_NAME = 'database.sqlite'
+DATABASE_ENGINE = 'postgresql_psycopg2'
+DATABASE_NAME = 'restaurant_review'
+DATABASE_USER = ''
+DATABASE_PASSWORD = ''
+DATABASE_HOST = ''
+DATABASE_PORT = ''
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -58,6 +62,7 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
+	'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 	'django.middleware.common.CommonMiddleware',
 	'django.contrib.sessions.middleware.SessionMiddleware',
 	'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -80,6 +85,9 @@ INSTALLED_APPS = (
 	'django.contrib.sites',
 	'django.contrib.admin',
 	'django.contrib.humanize',
+	'django.contrib.flatpages',
+	'django.contrib.gis',
+	'restaurant_review.apps.restaurants',
 )
 
 AUTH_PROFILE_MODULE = 'accounts.profile'

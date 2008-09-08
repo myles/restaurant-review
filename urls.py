@@ -8,7 +8,6 @@ from django.views.generic.simple import direct_to_template
 admin.autodiscover()
 
 urlpatterns = patterns('',
-	(r'^$', direct_to_template, { 'template': 'home.html' }, 'homepage'),
 	(r'^admin/(.*)', admin.site.root),
 )
 

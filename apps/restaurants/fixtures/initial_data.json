@@ -1,0 +1,28 @@
+[
+	{
+		"model": "restaurants.neighborhood",
+		"pk": 1,
+		"fields": {
+			"name": "The Annex",
+			"slug": "annex",
+			"site": 1
+		}
+	},
+	{
+		"model": "restaurants.restaurant",
+		"pk": 1,
+		"fields": {
+			"name": "linuxcaffe",
+			"slug": "linuxcaffe",
+			"num": "326",
+			"street": "Harbord Street",
+			"city": "Toronto",
+			"province": "Ontario",
+			"postal_code": "M6G 3A4",
+			"country": "Canada",
+			"neighorhood": 1,
+			"site": 1,
+			"point": "POINT(43.659954 -79.417435)"
+		}
+	}
+]

@@ -1,0 +1,64 @@
+[
+	{
+		"model": "sites.site",
+		"pk": 1,
+		"fields": {
+			"domain": "127.0.0.1:8000",
+			"name": "Restaurant Reviews"
+		}
+	},
+	{
+		"model": "sites.site",
+		"pk": 2,
+		"fields": {
+			"domain": "127.0.0.1:8001",
+			"name": "Toronto Restaurant's"
+		}
+	},
+	{
+		"model": "sites.site",
+		"pk": 3,
+		"fields": {
+			"domain": "127.0.0.1:8002",
+			"name": "Vancouver Restaurant's"
+		}
+	},
+	{
+		"model": "sites.site",
+		"pk": 4,
+		"fields": {
+			"domain": "127.0.0.1:8003",
+			"name": "New York Restaurant's"
+		}
+	},
+	{
+		"model": "flatpages.flatpage",
+		"pk": 3,
+		"fields": {
+			"url": "/",
+			"title": "Home",
+			"content": "<ul>\n<li>Toronto</li>\n<li>Vancouver</li>\n<li>New York</li>\n</ul>",
+			"sites": [1]
+		}
+	},
+	{
+		"model": "flatpages.flatpage",
+		"pk": 1,
+		"fields": {
+			"url": "/",
+			"title": "Home",
+			"content": "<p>Welcome to Restaurant Review.</p>",
+			"sites": [4, 2, 3]
+		}
+	},
+	{
+		"model": "flatpages.flatpage",
+		"pk": 2,
+		"fields": {
+			"url": "/about/",
+			"title": "About",
+			"content": "<p>Restaurant Review was created by <a href=\"http://mylesbraithwaite.com/\">Myles Braithwaite</a> for his TLUG presentation on Django.</p>",
+			"sites": [4, 2, 3]
+		}
+	}
+]
